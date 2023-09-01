@@ -974,10 +974,12 @@ const SortableTreeWithoutDndContext = function (props: ReactSortableTreeProps) {
     </DndContext.Consumer>
   )
 }
+const isTouchDevice = !!('ontouchstart' in window || navigator.maxTouchPoints)
+const dndBackend = isTouchDevice ? TouchBackend : HTML5Backend
 
 const SortableTree = function (props: ReactSortableTreeProps) {
   return (
-    <DndProvider debugMode={props.debugMode} backend={HTML5Backend}>
+    <DndProvider debugMode={props.debugMode} backend={dndBackend}>
       <SortableTreeWithoutDndContext {...props} />
     </DndProvider>
   )
