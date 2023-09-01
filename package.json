@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nosferatu500/react-sortable-tree"
+    "url": "https://github.com/askomyagin/react-sortable-tree"
   },
   "keywords": [
     "react",
@@ -45,7 +45,7 @@
   ],
   "author": "Chris Fritz",
   "license": "MIT",
-  "bugs": "https://github.com/nosferatu500/react-sortable-tree/issues",
+  "bugs": "https://github.com/askomyagin/react-sortable-tree/issues",
   "devDependencies": {
     "@babel/core": "^7.22.5",
     "@babel/eslint-parser": "^7.22.5",
